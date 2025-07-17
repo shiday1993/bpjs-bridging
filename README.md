@@ -15,7 +15,7 @@ Skrip ini digunakan untuk menghasilkan signature request untuk API BPJS Kesehata
 ## 📦 Cara Menjalankan
 ```bash
 python3 index.py
-
+```
 ## 📚 Credit
 
 Sebagian besar kode enkripsi berasal dari [repo ini](https://github.com/morizbebenk/flask-bpjs), dengan beberapa modifikasi untuk kebutuhan Web.py.
