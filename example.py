@@ -1,4 +1,4 @@
-from src.bpjs import Bridging
+from bpjs import Bridging
 
 config ={
     "consid": "your_consid",
