@@ -7,7 +7,6 @@ Library ini menyediakan interface sederhana untuk melakukan request ke beberapa 
 > Project ini bukan library resmi dari BPJS Kesehatan.
 
 ## Fitur
-
 - Generate `X-Signature` menggunakan HMAC SHA-256
 - Generate header autentikasi BPJS
 - Dekripsi response terenkripsi menggunakan AES
@@ -22,15 +21,11 @@ Library ini menyediakan interface sederhana untuk melakukan request ke beberapa 
 - Normalisasi response BPJS
 
 ## Instalasi
-
 ```bash
-pip install bpjs
+pip install bpjs-bridging
 ```
 
-> Nama package dapat berubah sebelum rilis resmi ke PyPI.
-
 ## Penggunaan
-
 ```python
 from bpjs import Bridging
 
@@ -49,7 +44,6 @@ print(response)
 ```
 
 ### POST Request
-
 ```python
 payload = {
     "param": "0000000000000",
@@ -66,7 +60,6 @@ print(response)
 ```
 
 ## Service
-
 Service ditentukan ketika membuat instance `Bridging`.
 
 ```python
@@ -79,7 +72,6 @@ aplicare = Bridging(config, "aplicare")
 Setiap konfigurasi `config` membawa host service yang akan digunakan.
 
 ## Konfigurasi
-
 ```python
 config = {
     "host": "SERVICE_HOST",
@@ -92,7 +84,6 @@ config = {
 Jangan menyimpan credential BPJS secara langsung di source code pada aplikasi production. Gunakan environment variable atau mekanisme secret management lainnya.
 
 ## Credit
-
 Implementasi awal mekanisme signature dan dekripsi response
 dikembangkan berdasarkan:
 
@@ -108,7 +99,6 @@ untuk mendukung beberapa service BPJS melalui interface berbasis class.
 - Aplikasi ini open source dengan lisensi [MIT](LICENSE).
 
 ## Disclaimer
-
 Project ini merupakan library pihak ketiga dan tidak berafiliasi, didukung, atau dikelola oleh BPJS Kesehatan.
 
 Pengguna bertanggung jawab atas penggunaan credential dan kepatuhan terhadap ketentuan API BPJS Kesehatan.
